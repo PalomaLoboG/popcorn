@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="logo">🎬 PopCorn</span>
+  <span class="spacer"></span>
+
+  <!-- Enlaces de navegación -->
+  <button mat-button routerLink="/explorar">Explorar</button>
+  <button mat-button routerLink="/favoritos">Favoritos</button>
+  <button mat-button routerLink="/peliculas">Películas</button>
+  <button mat-button routerLink="/series">Series</button>
+</mat-toolbar>
+
+<!-- Aquí se mostrarán las páginas -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
