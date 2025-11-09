@@ -9,17 +9,9 @@ import { Movie } from '../app/core/models/model';
   templateUrl: './explorar.component.html',
   styleUrl: './explorar.component.css'
 })
-export class ExplorarComponent implements OnInit {
+export class ExplorarComponent{
 
-  constructor(private tmbd: TmdbService){}
+  constructor(){}
 
-  trendingMovies: Movie[] = [];
-
-  ngOnInit(): void {
-      this.tmbd.getTrendingMovies(1).subscribe({
-        next: (data) => this.trendingMovies=data.results, 
-        error: (err) => console.log(err),
-      });
-  }
 
 }
