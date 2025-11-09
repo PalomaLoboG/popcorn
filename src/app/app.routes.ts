@@ -14,5 +14,11 @@ export const routes: Routes = [
     },
     {path: 'peliculas', loadComponent:()=>
         import('./peliculas/peliculas.component').then(c=>c.PeliculasComponent),
+    },
+    {
+        path: 'pelicula/:id', loadComponent:()=>
+            import('./detalle-pelicula/detalle-pelicula.component').then(c=>c.DetallePeliculaComponent)
     }
+      
+    
 ];
