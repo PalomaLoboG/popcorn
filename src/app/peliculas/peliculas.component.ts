@@ -2,10 +2,11 @@ import { Component, OnInit} from '@angular/core';
 import { TmdbService } from '../app/core/services/tmdb.service';
 import { CommonModule } from '@angular/common';
 import { Movie } from '../app/core/models/model';
+import { CardMovieComponent } from '../card-movie/card-movie.component';
 
 @Component({
   selector: 'app-peliculas',
-  imports: [CommonModule],
+  imports: [CommonModule, CardMovieComponent],
   templateUrl: './peliculas.component.html',
   styleUrl: './peliculas.component.css'
 })
